@@ -1,0 +1,42 @@
+#eval{
+	width:1800px;
+	overflow:hidden}
+#eval #box #ul img{
+	float: left;
+	width: 700px;
+	height: 450px;
+	border-radius: 70%;
+}
+#eval #eval_p{
+	padding-left:820px ;
+}
+#eval #eval_p li{
+	font-size: 20px;
+	line-height: 50px;
+}
+#box{
+	position:relative;
+}
+#ul li{
+	padding: 40px;
+	list-style: none;
+	display:none;
+}
+#ol{
+	position:absolute;
+	top:440px;
+	left:345px;
+}
+#ol li{
+	list-style: none;
+	float:left;
+	width:15px;
+	height:15px;				
+	border-radius: 50%;
+	border:1px solid white;
+	text-align:center;
+	margin-right:5px;
+}
+.active{
+	background-color:white;
+}

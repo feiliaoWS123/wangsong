@@ -1,0 +1,301 @@
+html {
+	font-size: 62.5%;
+	width: 100%;
+	overflow: hidden
+}
+
+body {
+	font-size: 18px;
+	overflow: hidden
+}
+
+a {
+	text-decoration: none;
+	color: #fff
+}
+
+h1 {
+	margin: 30px 0 50px;
+	font-size: 35px
+}
+
+h2 {
+	margin: 20px 0
+}
+
+h3 {
+	margin: 20px 0
+}
+
+table {
+	border-collapse: collapse
+}
+
+section {
+	display: none;
+}
+
+.clear_both {
+	clear: both
+}
+
+
+/*右边圆点*/
+
+aside {
+	width: 40px;
+	display: block;
+	position: fixed;
+	top: 42%;
+	right: 10px;
+	transform: translate(-42%, 0);
+	-webkit-transform: translate(-42%, 0);
+	-moz-transform: translate(-42%, 0);
+	-ms-transform: translate(-42%, 0);
+	-o-transform: translate(-42%, 0)
+}
+
+aside a {
+	width: 14px;
+	height: 14px;
+	display: block;
+	position: relative;
+	margin: 25px 0;
+	border-radius: 50%;
+	background: #d9d9d9;
+	cursor: pointer;
+}
+
+aside a span {
+	width: 60px;
+	height: 20px;
+	display: none;
+	position: absolute;
+	top: -2px;
+	color: #80d6f2;
+	right: 25px;
+	font-size: 18px;
+	text-align: right
+}
+
+aside a:hover span {
+	display: block
+}
+
+aside .cur_a {
+	background: black
+}
+
+aside .cur_a span {
+	color: #80d6f2;
+	text-decoration: underline
+}
+
+nav {
+	width: 100%;
+	position: relative
+}
+
+nav .nav_wrap {
+	width: 90%;
+	margin: 0 auto;
+	padding: 23px 0;
+	overflow: hidden
+}
+
+.resume_logo {
+	width: 20%;
+	float: left
+}
+
+.resume_logo a {
+	font-size: 50px
+}
+
+.nav_bar {
+	width: 67%;
+	float: right
+}
+
+.nav_bar ul li {
+	width: 16%;
+	float: left;
+	font-size: 18px
+}
+
+
+/*设计鼠标悬停时下划线的效果*/
+
+.nav_bar ul li a {
+	display: block;
+	padding: 2rem 0;
+	margin: 0 10px;
+	text-align: center;
+	color: #fff;
+	position: relative;
+	transition: color .5s ease-in;
+	/*5s规定以慢速开始的过渡效果*/
+	-moz-transition: color .5s ease-in;
+	/* 兼容Firefox 4 */
+	-webkit-transition: color .5s ease-in;
+	/* 兼容Safari and Chrome */
+	-o-transition: color .5s ease-in
+}
+
+
+/*兼容 Opera浏览器*/
+
+.nav_bar ul li a:hover {
+	color: #80d6f2;
+	display: block
+}
+
+.nav_bar ul li a:after {
+	width: 0;
+	height: 1px;
+	content: "";
+	position: absolute;
+	left: 0;
+	bottom: 10px;
+	background: #80d6f2;
+	transition: width .5s ease-in;
+	-moz-transition: width .5s ease-in;
+	-webkit-transition: width .5s ease-in;
+	-o-transition: width .5s ease-in
+}
+
+.nav_bar ul li a:hover:after {
+	width: 100%
+}
+
+
+/*头像*/
+
+.cen_con {
+	width: 50%;
+	height: 60%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	/*兼容 IE浏览器*/
+	-o-transform: translate(-50%, -50%);
+	text-align: center;
+	overflow: hidden;
+}
+
+.portrait {
+	height: 32%;
+	margin: 0 auto 8%;
+	padding: 6px;
+	text-align: center
+}
+
+.portrait img {
+	height: 100%;
+	vertical-align: middle;
+	border-radius: 50%
+}
+
+section {
+	width: 100%
+}
+
+section.page_one {
+	animation: 0.4s myscale 1;
+	color: white
+}
+
+.cen_text {
+	height: 60%;
+}
+
+.cen_text h2 {
+	height: 18%;
+	min-height: 38px;
+	margin: 0
+}
+
+.cen_text h3 {
+	height: 18%;
+	min-height: 32px;
+	margin: 0
+}
+
+.down_arrow {
+	width: 100%;
+	height: 80px;
+	position: fixed;
+	bottom: 40px;
+	left: 0
+}
+
+.down_arrow a {
+	width: 51px;
+	height: 51px;
+	border-radius: 50%;
+	border: 1px solid #FFFF00;
+	display: block;
+	margin: 0 auto;
+	cursor: pointer
+}
+
+.down_arrow a span {
+	width: 18px;
+	height: 18px;
+	display: block;
+	margin: 15px;
+	background: url(../images/sprite_img.png) no-repeat -18px -50px;
+	transition: background .5s ease-in;
+	-moz-transition: background .5s ease-in;
+	-webkit-transition: background .5s ease-in;
+	-o-transition: background .5s ease-in
+}
+
+.down_arrow a:hover {
+	border: 1px solid #80d6f2
+}
+
+.down_arrow a:hover span {
+	background: url(../images/sprite_img.png) no-repeat -18px -50px
+}
+
+.page_one {
+	background: url(../images/bg1.jpg) no-repeat center center;
+	background-size: cover;
+	display: none
+}
+
+#page_one1 {
+	width: 100%;
+	height: 100%;
+	background: rgba(255, 255, 255, 0.18);
+}
+
+.page_two {
+	display: none;
+	background: #B0E0E6;
+}
+
+.page_three {
+	display: none;
+	background: #BFEFFF;
+}
+
+.page_four {
+	display: none;
+	background: #E0FFFF;
+}
+
+.page_five {
+	display: none;
+	background: #80D6F2;
+}
+
+.page_six {
+	display: none;
+	background: #E0EEEE;
+}

@@ -1,0 +1,159 @@
+ul.con_style {
+	overflow: hidden;
+	padding: 0 0 20px 0
+}
+
+ul.con_style li {
+	width: 33.33%;
+	float: left;
+	margin: 20px 0;
+	overflow: hidden
+}
+
+ul.con_style li span {
+	width: 50px;
+	height: 50px;
+	display: block;
+	margin: 0 auto 20px;
+	background: url("../images/sprite_img.png")
+}
+
+ul.con_style li p {
+	text-align: center;
+	font-size: 1.8rem
+}
+
+ul.con_style li p a {
+	color: #333
+}
+
+ul.con_style li:nth-child(1) span {
+	background-position: 0 -70px
+}
+
+ul.con_style li:nth-child(2) span {
+	background-position: -50px -70px
+}
+
+ul.con_style li:nth-child(3) span {
+	background-position: -100px -70px
+}
+
+.contact_info {
+	width: 100%;
+}
+
+.contact_info form {
+	width: 100%;
+	overflow: hidden;
+	padding: 5px 0
+}
+
+.contact_info form label {
+	width: 33.33%;
+	padding: 0 10px 0 0;
+	height: 70px;
+	float: left
+}
+
+.contact_info form label p {
+	color: red;
+	line-height: 2rem;
+	padding: 0 12px
+}
+
+.contact_info form label:nth-child(3) {
+	padding: 0
+}
+
+.contact_info form label:nth-child(4) {
+	width: 100%;
+	height: 215px;
+	padding: 0
+}
+
+.contact_info form input[type="text"] {
+	width: 100%;
+	float: left;
+	background: #ffffff;
+	color: #333
+}
+
+.contact_info form textarea {
+	width: 100%;
+	height: 180px;
+	background: #ffffff;
+	resize: none;
+	color: #333
+}
+
+.contact_info form button {
+	color: #fff;
+	float: right;
+	padding: 8px 16px;
+	font-size: 14px;
+	border-radius: 4px;
+	cursor: pointer;
+	border: 1px solid #5BA4E8;
+	background: #5BA4E8
+}
+
+input,
+textarea,
+button {
+	outline: none;
+	padding: 12px;
+	font-size: 14px;
+	border: 1px solid #e5e5e5;
+	background: none
+}
+
+.con_p p {
+	width: 100%;
+	height: 19px;
+	position: fixed;
+	bottom: 20px;
+	left: 0
+}
+
+
+/*媒介宽度最大1370*/
+
+@media screen and (max-width: 1370px) {
+	.con_wrap {
+		width: 80%;
+		padding: 1rem 0
+	}
+	.tit_wrap+div {
+		margin: 10px 0 0 0
+	}
+	.tit_wrap h2 {
+		margin: 0
+	}
+	.myinfo table tr:last-child td p {
+		padding: 0
+	}
+	.canvas_wrap {
+		width: 50%;
+		float: left;
+		overflow: hidden
+	}
+	.text_wrap {
+		width: 50%;
+		float: left
+	}
+	.text_wrap p {
+		display: inline-block;
+		font-size: 18px;
+		line-height: 24px
+	}
+	.tit_wrap .scissors {
+		top: 101px
+	}
+	.text_wrap p {
+		padding: 4px 0
+	}
+	.canvas_con {
+		margin: 5px 10px
+	}
+}
